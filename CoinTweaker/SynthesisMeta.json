@@ -1,0 +1,8 @@
+{
+  "Nickname": "CoinTweaker",
+  "Visibility": "Visible",
+  "OneLineDescription": "Synthesis Patcher for tweaking the weight, value and names of coins from a selection of mods.",
+  "LongDescription": "This Patcher allows tweaking of weight, value and names of coins from the following mods (none required): Vanilla, Beyond Skyrim: Bruma, Narrative Loot, Unique Coins & Coins of Tamriel.",
+  "PreferredAutoVersioning": "Default",
+  "RequiredMods": []
+}
