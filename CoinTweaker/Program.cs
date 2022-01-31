@@ -1,10 +1,8 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using Mutagen.Bethesda;
 using Mutagen.Bethesda.Synthesis;
 using Mutagen.Bethesda.Skyrim;
-using Mutagen.Bethesda.FormKeys.SkyrimSE;
 using System.Threading.Tasks;
 using CoinTweaker.Settings;
 using CoinTweaker.Utils;
@@ -29,14 +27,14 @@ namespace CoinTweaker
 
         public class CoinsToModify
         {
-            public static List<TestObject> CoinWeightList = new List<TestObject>(new TestObject[] {
-                new TestObject("Gold001", Settings.Name.RenameVanillaGoldCoinTo, Settings.Weight.VanillaGoldWeight, 1),
-                new TestObject("Gold002", Settings.Name.RenameCoinsofTamrielSilverCoinTo, Settings.Weight.CoinsofTamrielSilverCoinWeight, Settings.Value.RevalueCoinsofTamrielSilverCoinTo),
-                new TestObject("Gold003", Settings.Name.RenameCoinsofTamrielGoldCoinTo, Settings.Weight.CoinsofTamrielGoldCoinWeight, Settings.Value.RevalueCoinsofTamrielGoldCoinTo),
-                new TestObject("nl_CursedCoin", Settings.Name.RenameNarrativeLootAncientCoinTo, Settings.Weight.NarrativeLootAncientCoinWeight, Settings.Value.RevalueNarrativeLootAncientCoinTo),
-                new TestObject("BSKAyleidGold001", Settings.Name.RenameBeyondSkyrimAyleidCoinTo, Settings.Weight.BeyondSkyrimAyleidCoinWeight, Settings.Value.RevalueBeyondSkyrimAyleidCoinTo),
-                new TestObject("AAAA_DwarvenCoin", Settings.Name.RenameUniqueCoinsDwarvernCoinTo, Settings.Weight.UniqueCoinsDwarvernCoinWeight, Settings.Value.RevalueUniqueCoinsDwarvernCoinTo),
-                new TestObject("AAAA_NordicCoin", Settings.Name.RenameUniqueCoinsNordicCoinTo, Settings.Weight.UniqueCoinsNordicCoinWeight, Settings.Value.RevalueUniqueCoinsNordicCoinTo),
+            public static List<CoinObject> CoinWeightList = new List<CoinObject>(new CoinObject[] {
+                new CoinObject("Gold001", Settings.Name.RenameVanillaGoldCoinTo, Settings.Weight.VanillaGoldWeight, 1),
+                new CoinObject("Gold002", Settings.Name.RenameCoinsofTamrielSilverCoinTo, Settings.Weight.CoinsofTamrielSilverCoinWeight, Settings.Value.RevalueCoinsofTamrielSilverCoinTo),
+                new CoinObject("Gold003", Settings.Name.RenameCoinsofTamrielGoldCoinTo, Settings.Weight.CoinsofTamrielGoldCoinWeight, Settings.Value.RevalueCoinsofTamrielGoldCoinTo),
+                new CoinObject("nl_CursedCoin", Settings.Name.RenameNarrativeLootAncientCoinTo, Settings.Weight.NarrativeLootAncientCoinWeight, Settings.Value.RevalueNarrativeLootAncientCoinTo),
+                new CoinObject("BSKAyleidGold001", Settings.Name.RenameBeyondSkyrimAyleidCoinTo, Settings.Weight.BeyondSkyrimAyleidCoinWeight, Settings.Value.RevalueBeyondSkyrimAyleidCoinTo),
+                new CoinObject("AAAA_DwarvenCoin", Settings.Name.RenameUniqueCoinsDwarvernCoinTo, Settings.Weight.UniqueCoinsDwarvernCoinWeight, Settings.Value.RevalueUniqueCoinsDwarvernCoinTo),
+                new CoinObject("AAAA_NordicCoin", Settings.Name.RenameUniqueCoinsNordicCoinTo, Settings.Weight.UniqueCoinsNordicCoinWeight, Settings.Value.RevalueUniqueCoinsNordicCoinTo),
             });
         }
 
